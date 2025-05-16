@@ -65,4 +65,4 @@ jobs:
 
   check-links:
     needs: deploy
-    uses: check-spelling/check-spelling-docs/.github/workflows/link-checker.yml@main
+    uses: check-spelling-sandbox/check-spelling-docs/.github/workflows/link-checker.yml@main
