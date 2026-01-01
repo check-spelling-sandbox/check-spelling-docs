@@ -14,7 +14,7 @@ Generally, check-spelling with `checkout: true` doesn't check submodules anyway.
 
 ## Approach 
 
-check-spelling as of [v0.0.25](http://github.com/check-spelling/check-spelling/releases/tag/v0.0.25) when set to `checkout: true` will remove persisted unless it is [[updating the expect list|Feature: Update expect list]].
+check-spelling as of [v0.0.25](http://github.com/check-spelling/check-spelling/releases/tag/v0.0.25) when set to `checkout: true` will remove persisted unless it is [updating the expect list](./Feature:-Update-expect-list).
 
 It does not use the `actions/checkout` implementation, although the general behavior is the same:
 1. `actions/checkout` sets up a repository (with the credentials necessary to fetch)
@@ -22,4 +22,7 @@ It does not use the `actions/checkout` implementation, although the general beha
 3. `actions/checkout` checks out the desired reference
 4. _something_ attempts to iterate over the checked out repository to remove the credentials
 
-The implementation lives in [`remove-persisted-credentials`](https://github.com/check-spelling/check-spelling/blob/eca22f4/wrappers/remove-persisted-credentials).
+The implementation lives in [`remove-persisted-credentials`](https://raw.githubusercontent.com/check-spelling/check-spelling/eca22f4/wrappers/remove-persisted-credentials).
+
+---
+[FAQ](FAQ) | [Showcase](Showcase) | [Event descriptions](Event-descriptions) | [Configuration information](Configuration-information) | [Known Issues](Known-Issues) | [Possible features](Possible-features) | [Deprecations](Deprecations) | [Release notes](Release-notes) | [Helpful scripts](Helpful-scripts)
